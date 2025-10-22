@@ -2,14 +2,14 @@
 # This file will be used to generate your entry in the course showroom
 
 # Basic information
-handle: your-github-username
-name: Your Full Name
-email: your-email@udit.es
+handle: jnalvarez22
+name: Juan Álvarez Rodríguez
+email: juan.alvarez@alumnos.udit.es
 
 # URLs (will be auto-generated if you follow naming conventions)
-github_url: https://github.com/your-username
+github_url: https://github.com/jnalvarez22/
 project_url: https://your-username.github.io/your-project-repo
-repository_url: https://github.com/your-username/your-project-repo
+repository_url: https://github.com/jnalvarez22/miweb
 
 # Project details
 title:

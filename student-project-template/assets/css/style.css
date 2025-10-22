@@ -23,8 +23,15 @@
 
 html, body {
   height: 100%;
-  font-family: 'Special Elite', monospace;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: var(--bg-color);
+  /* Add dark overlay to dim the background image */
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url('https://ik.imagekit.io/znjrrdaoc/steelbg.jpg?updatedAt=1760990699005');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: var(--text-color);
   line-height: 1.5;
   scroll-behavior: smooth;
@@ -49,7 +56,7 @@ html, body {
 
 .hero-title {
   color: var(--title-color);
-  font-family: 'The Drama Army', 'Special Elite', monospace;
+  font-family: 'The Drama Army', sans-serif;  /* keep special font for title only */
   box-sizing: border-box;
   width: 100%;
   max-width: 100%;
@@ -62,6 +69,9 @@ html, body {
   text-align: center;
   font-weight: 400;
   text-transform: uppercase;
+  text-shadow: 
+    2px 2px 4px rgba(0, 0, 0, 0.8),    /* close shadow */
+    4px 4px 8px rgba(0, 0, 0, 0.5);     /* distant blurred shadow */
 }
 
 nav.toc {
@@ -105,7 +115,7 @@ nav.toc a:hover {
   padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: var(--gap);
 }
 
 .section-card h2 {
@@ -124,6 +134,7 @@ nav.toc a:hover {
   position: relative;
   overflow: hidden;
   border: 1px solid var(--text-color); /* borde blanco */
+  margin-bottom: 0; /* remove bottom margin if it exists */
 }
 
 .photo-box img {
@@ -133,6 +144,12 @@ nav.toc a:hover {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* Add this new style for text content below photos */
+.section-content {
+  padding: 0 var(--gap);
+  color: var(--text-color);
 }
 
 .container {
